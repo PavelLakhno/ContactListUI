@@ -8,25 +8,15 @@
 import SwiftUI
 
 struct DetailContactsView: View {
-    let persons = Person.getPersonList()
+    let persons: [Person]
     
     var body: some View {
         NavigationView {
             VStack {
-                
                 List(persons, id: \.self) { person in
                     Section(header: Text("\(person.fullName)")) {
-                        HStack {
-                            Image(systemName: "tray.fill")
-                                .foregroundColor(.blue)
-                            Text(person.email)
-                        }
-                        
-                        HStack {
-                            Image(systemName: "phone.fill")
-                                .foregroundColor(.blue)
-                            Text(person.phoneNumber)
-                        }
+                        DetailRowView(image: "tray.fill", info: "\(person.email)")
+                        DetailRowView(image: "phone.fill", info: "\(person.phoneNumber)")
                     }
                     
                 }
@@ -39,6 +29,6 @@ struct DetailContactsView: View {
 
 struct DetailContactsView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailContactsView()
+        DetailContactsView(persons: Person.getPersonList())
     }
 }

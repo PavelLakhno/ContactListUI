@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct Person: Hashable {
-    
-    //var id: ObjectIdentifier
-        
+
     let firstName: String
     let lastName: String
     let email: String
