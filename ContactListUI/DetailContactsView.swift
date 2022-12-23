@@ -8,8 +8,32 @@
 import SwiftUI
 
 struct DetailContactsView: View {
+    let persons = Person.getPersonList()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                
+                List(persons, id: \.self) { person in
+                    Section(header: Text("\(person.fullName)")) {
+                        HStack {
+                            Image(systemName: "tray.fill")
+                                .foregroundColor(.blue)
+                            Text(person.email)
+                        }
+                        
+                        HStack {
+                            Image(systemName: "phone.fill")
+                                .foregroundColor(.blue)
+                            Text(person.phoneNumber)
+                        }
+                    }
+                    
+                }
+                .listStyle(.insetGrouped)
+                .navigationTitle("Contact List")
+            }
+        }
     }
 }
 

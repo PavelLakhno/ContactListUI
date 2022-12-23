@@ -17,10 +17,10 @@ struct ContactsView: View {
                     NavigationLink(destination: UserContactView(person: person)) {
                         Text(person.fullName)
                     }
-                    
                 }
                 .listStyle(.plain)
                 .navigationTitle("Contact List")
+
             }
         }
     }
