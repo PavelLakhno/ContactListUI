@@ -11,6 +11,11 @@
 		CEAA94482955991100267B91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA94472955991100267B91 /* ContentView.swift */; };
 		CEAA944A2955991300267B91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEAA94492955991300267B91 /* Assets.xcassets */; };
 		CEAA944D2955991300267B91 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEAA944C2955991300267B91 /* Preview Assets.xcassets */; };
+		CEAA9454295599D900267B91 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA9453295599D900267B91 /* DataManager.swift */; };
+		CEAA945629559A6900267B91 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA945529559A6900267B91 /* UserInfo.swift */; };
+		CEAA945829559FE300267B91 /* UserContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA945729559FE300267B91 /* UserContactView.swift */; };
+		CEAA945A2955A79A00267B91 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA94592955A79A00267B91 /* ContactsView.swift */; };
+		CEAA945C2955BDF100267B91 /* DetailContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA945B2955BDF100267B91 /* DetailContactsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		CEAA94472955991100267B91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEAA94492955991300267B91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEAA944C2955991300267B91 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CEAA9453295599D900267B91 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		CEAA945529559A6900267B91 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		CEAA945729559FE300267B91 /* UserContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContactView.swift; sourceTree = "<group>"; };
+		CEAA94592955A79A00267B91 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		CEAA945B2955BDF100267B91 /* DetailContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContactsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,11 @@
 			children = (
 				CEAA94452955991100267B91 /* ContactListUIApp.swift */,
 				CEAA94472955991100267B91 /* ContentView.swift */,
+				CEAA9453295599D900267B91 /* DataManager.swift */,
+				CEAA945529559A6900267B91 /* UserInfo.swift */,
+				CEAA945729559FE300267B91 /* UserContactView.swift */,
+				CEAA94592955A79A00267B91 /* ContactsView.swift */,
+				CEAA945B2955BDF100267B91 /* DetailContactsView.swift */,
 				CEAA94492955991300267B91 /* Assets.xcassets */,
 				CEAA944B2955991300267B91 /* Preview Content */,
 			);
@@ -137,7 +152,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEAA945629559A6900267B91 /* UserInfo.swift in Sources */,
 				CEAA94482955991100267B91 /* ContentView.swift in Sources */,
+				CEAA945829559FE300267B91 /* UserContactView.swift in Sources */,
+				CEAA945A2955A79A00267B91 /* ContactsView.swift in Sources */,
+				CEAA945C2955BDF100267B91 /* DetailContactsView.swift in Sources */,
+				CEAA9454295599D900267B91 /* DataManager.swift in Sources */,
 				CEAA94462955991100267B91 /* ContactListUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
