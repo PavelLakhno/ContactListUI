@@ -22,6 +22,6 @@ struct DetailRowView: View {
 
 struct DetailRowView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailRowView(image: "", info: "")
+        DetailRowView(image: "tray.fill", info: "information")
     }
 }

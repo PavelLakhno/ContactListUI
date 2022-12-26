@@ -14,11 +14,10 @@ struct DetailContactsView: View {
         NavigationView {
             VStack {
                 List(persons, id: \.self) { person in
-                    Section(header: Text("\(person.fullName)")) {
-                        DetailRowView(image: "tray.fill", info: "\(person.email)")
-                        DetailRowView(image: "phone.fill", info: "\(person.phoneNumber)")
+                    Section(header: Text(person.fullName)) {
+                        DetailRowView(image: "tray.fill", info: person.email)
+                        DetailRowView(image: "phone.fill", info: person.phoneNumber)
                     }
-                    
                 }
                 .listStyle(.insetGrouped)
                 .navigationTitle("Contact List")

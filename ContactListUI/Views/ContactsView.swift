@@ -12,16 +12,13 @@ struct ContactsView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                List(persons, id: \.self) { person in
-                    NavigationLink(destination: UserContactView(person: person)) {
-                        Text(person.fullName)
-                    }
+            List(persons, id: \.self) { person in
+                NavigationLink(destination: UserContactView(person: person)) {
+                    Text(person.fullName)
                 }
-                .listStyle(.plain)
-                .navigationTitle("Contact List")
-
             }
+            .listStyle(.plain)
+            .navigationTitle("Contact List")
         }
     }
 }

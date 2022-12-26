@@ -20,8 +20,8 @@ struct UserContactView: View {
                 Spacer()
             }.padding()
             
-            DetailRowView(image: "tray.fill", info: "\(person.email)")
-            DetailRowView(image: "phone.fill", info: "\(person.phoneNumber)")
+            DetailRowView(image: "tray.fill", info: person.email)
+            DetailRowView(image: "phone.fill", info: person.phoneNumber)
         }
         .listStyle(.insetGrouped)
         .navigationTitle(person.fullName)
@@ -30,11 +30,6 @@ struct UserContactView: View {
 
 struct UserContactView_Previews: PreviewProvider {
     static var previews: some View {
-        UserContactView(person: Person(
-            firstName: "",
-            lastName: "",
-            email: "",
-            phoneNumber: "")
-        )
+        UserContactView(person: Person.getPersonList().first!)
     }
 }
